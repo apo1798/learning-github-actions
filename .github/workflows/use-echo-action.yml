@@ -1,0 +1,12 @@
+name: Using HongLinLiao echo-action
+run-name: ${{ github.actor }} is greeting
+
+on: [push]
+jobs:
+  echo-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Action
+        uses: HongLinLiao/echo-action@v1
+        with:
+          user: ${{ github.actor }}
