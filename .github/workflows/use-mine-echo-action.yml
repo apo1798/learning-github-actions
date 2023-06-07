@@ -16,13 +16,17 @@
 # name: Using HongLinLiao echo-action
 # run-name: ${{ github.actor }} is greeting
 
+# .github/workflows/test-action.yml
+name: Test action
+run-name: ${{ github.actor }} is testing
 on: [push]
 jobs:
-  call-apo1798-workflow:
+  call-our-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Practice by apo1798
+      - name: Test action
+        # here we connect to the test workflow
         uses: apo1798/echo-action@a4cb21017013701ac4ae47e60328c16c0cef75ef
-        # uses: apo1798/echo-action@main
+        # uses: apo1798/echo-action@main # another alternative
         with:
           user: ${{ github.actor }}
