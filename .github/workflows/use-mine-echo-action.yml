@@ -1,24 +1,27 @@
-name: Echo Practice by apo1798
-run-name: ${{ github.actor }} is greeting
-
-on: [push]
-jobs:
-  echo-action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Echo Practice by apo1798
-        uses: apo1798/echo-action@1.0
-        with:
-          user: ${{ github.actor }}
-# name: Using HongLinLiao echo-action
+# name: Echo Practice by apo1798
 # run-name: ${{ github.actor }} is greeting
 
 # on: [push]
 # jobs:
-#   call-apo1798-workflow:
+#   echo-action:
 #     runs-on: ubuntu-latest
 #     steps:
-#       - name: Echo Action
-#         uses: apo1798/echo-action/action.yml@1.0
+#       - name: Echo Practice by apo1798
+#         uses: apo1798/echo-action@1.0
 #         with:
 #           user: ${{ github.actor }}
+
+#  ///////////////////////////////////
+
+# name: Using HongLinLiao echo-action
+# run-name: ${{ github.actor }} is greeting
+
+on: [push]
+jobs:
+  call-apo1798-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Practice by apo1798
+        uses: apo1798/echo-action@main
+        with:
+          user: ${{ github.actor }}
