@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Practice by apo1798
-        uses: apo1798/echo-action@main
+        uses: apo1798/echo-action@a4cb21017013701ac4ae47e60328c16c0cef75ef
+        # uses: apo1798/echo-action@main
         with:
           user: ${{ github.actor }}
