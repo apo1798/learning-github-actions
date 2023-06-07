@@ -1,0 +1,12 @@
+name: Using HongLinLiao echo-action
+run-name: ${{ github.actor }} is greeting
+
+on: [push]
+jobs:
+  call-apo1798-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Action
+        uses: apo1798/echo-action/action.yml@1.0
+        with:
+          user: ${{ github.actor }}
