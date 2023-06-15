@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export default function Home() {
-  const newContent = '^_^!';
+  const newContent =  '^_^!'                ;
 
   console.log(newContent);
 
